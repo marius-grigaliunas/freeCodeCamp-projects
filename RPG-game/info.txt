@@ -1,0 +1,7 @@
+22.12.2023 worked for 2 hours 10 mins.
+23.12.2023 worked for 1 hour 58 mins.
+completed in 4 hours, 8 minutes.
+
+This project helped me understand DOM manipulation.
+It really was simpler that I expected, I was scared to start my projectsjust because I did not know how to change a simple label or text value with code, but this gave me confidence.
+Also freeCodeCamp is an amazing, amazing tool.
