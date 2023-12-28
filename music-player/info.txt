@@ -1,0 +1,11 @@
+Project completed in 2 hours 7 minutes.
+
+i learnt more about
+    -DOM manipulation: createElement, createTextNode;
+    -How to display new HTML elements
+    -general understanding how to create an app like a music player with implementations of
+play, pause, shuffle, next, previous;
+
+It was hard to understand the displaying of new elements and sometimes getting elements.
+
+NOTE: all HTML and CSS was provided by fcc, I only followed the JS guided lesson;
