@@ -1,0 +1,6 @@
+Project completed in 1 hour 15 minutes
+
+I struggled with:
+-linking the user input to a variable. This helped me understand how to access
+input text.
+-styling the page. I practiced more css work.
