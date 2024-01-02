@@ -1,0 +1,4 @@
+Project completed in 1 hour 30 minutes
+
+I practiced working with data structures, destructuring them into variables,
+filter, map methods.
