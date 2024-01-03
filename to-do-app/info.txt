@@ -1,0 +1,6 @@
+project completed in 2 hours 15 minutes
+
+learnt:
+-working with local storage, setItem, getItem, removeItem, clear;
+-basic CRUD functionality
+-gained more experience working with DOM
