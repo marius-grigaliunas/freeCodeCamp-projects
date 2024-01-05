@@ -1,0 +1,77 @@
+:root {
+    --romanRed: #8e001c;
+    --romanGold: #ffb300;
+    --romanPurple: #790181;
+    --romanPink: #ff7878;
+}
+
+body {
+    background-color: var(--romanRed);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--romanGold);
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin: 35px auto;
+    max-width: 400px;
+    font-size: 40px;
+}
+
+h3 {
+    padding: 0px;
+    margin: 0;
+}
+
+.container {
+    border: 4px solid var(--romanGold);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    width: 90%;
+    height: auto;
+    gap: 40px;
+    padding: 35px;
+    text-align: center;
+    font-size: 27px;
+    border-radius: 16px;
+    margin: 25px;
+}
+
+#number {
+    border: none;
+    background-color: var(--romanRed);
+    border-bottom: 2px solid var(--romanPink);
+    font-size: 2rem;
+    color: gold;
+    text-align: center;
+}
+
+#convert-btn {
+    border: none;
+    padding: 30px;
+    cursor: pointer;
+    background-color: darkred;
+    font-size: 2rem;
+    border-radius: 20px;
+    width: 60%;
+    color: var(--romanGold);
+}
+
+#convert-btn:hover {
+    background-color: var(--romanPink);
+}
+
+#output {
+    display: none;
+}
+
+.error {
+    background-color: black;
+}

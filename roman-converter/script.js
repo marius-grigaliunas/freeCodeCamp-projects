@@ -24,24 +24,34 @@ const convertToRoman = (num) => {
 const checkInput = (inputString) => {
     console.log(inputString);
     const input = parseInt(inputString);
-
-    if(input === "") {
-        outputDiv.textContent = "Please enter a valid number";
-        outputDiv.classList.add("error");
-        return;
-    } else if(input < 0) {
-        outputDiv.textContent = "Please enter a number greater than or equal to 1";
-        outputDiv.classList.add("error");
-        return;
-    } else if(input > 3999) {
-        outputDiv.textContent = "Please enter a number less than or equal to 3999";
-        outputDiv.classList.add("error");
-        return;
-    } else {
-        outputDiv.textContent = convertToRoman(input);
-        outputDiv.classList.remove("error");
-    }
     
+    switch(true) {
+        case inputString === "":
+            outputDiv.textContent = "Please enter a valid number";
+            outputDiv.classList.add("error");
+            outputDiv.style.display = "flex";
+            return;
+        case input < 0:
+            outputDiv.textContent = "Please enter a number greater than or equal to 1";
+            outputDiv.classList.add("error");
+            outputDiv.style.display = "flex";
+            return;
+        case input > 3999:
+            outputDiv.textContent = "Please enter a number less than or equal to 3999";
+            outputDiv.classList.add("error");
+            outputDiv.style.display = "flex";
+            return;
+        case input === 0:
+            outputDiv.textContent = "Romans didn't have a way to represent 0, please enter a postive number";
+            outputDiv.classList.add("error");
+            outputDiv.style.display = "flex";
+            return;
+        default:
+            outputDiv.textContent = convertToRoman(input);
+            outputDiv.classList.remove("error");
+            outputDiv.style.display = "flex";
+            break;
+    }
 };
 
 convertBtn.addEventListener("click", () => {

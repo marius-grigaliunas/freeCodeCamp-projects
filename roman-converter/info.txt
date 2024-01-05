@@ -1,1 +1,8 @@
 roman numeral converter from fcc JS certification course.
+
+Project completed in 2 hours
+
+-I struggled with css, It took a long time to get to a design I wanted,
+I can definitely say that I gained more experience with css.
+-More experience with DOM
+-algorithmic thinking, specifically how to link ruman numerals to letters.
