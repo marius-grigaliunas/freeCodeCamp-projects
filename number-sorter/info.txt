@@ -1,0 +1,6 @@
+Project completed in 1 hour 2 minutes
+
+I finished the project fast, because I was already familiar with sorting algorithms.
+Altough the teaching itself could have been better. It could have given more information
+what happens after every step, more details about this topic, but then again these 
+courses are meant to show how to code not the theory itself.
