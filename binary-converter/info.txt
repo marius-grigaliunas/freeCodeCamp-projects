@@ -1,1 +1,7 @@
 Project completed in 2 hours
+
+This project was mainly about recursion, and the stack.
+It helped me solidify my knowledge in these areas, though I do need more practice with recursion
+as I am still very confused about this subject at first, but after racking my head for a while i start 
+solving the presented problems, but the concept itself is understood.
+This project also touched on some animation work and how to visualize a stack trace in JS.
