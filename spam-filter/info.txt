@@ -1,0 +1,5 @@
+Completed the spam filter project.
+
+40mins
+
+practiced regex and matching cases;
