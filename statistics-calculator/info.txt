@@ -1,0 +1,7 @@
+Completed Statistics calculator project from freeCodeCamp.
+
+1 hour 14 minutes;
+
+I' ve practiced:
+-making mathematical operations
+-array methods;
