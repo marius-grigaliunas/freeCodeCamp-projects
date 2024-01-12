@@ -1,0 +1,6 @@
+project completed in 3hours 50 minutes
+
+I have struggled f=with functional programming.
+The concept of this function calls another function and another and another, was very confusing
+ and I quickly lost with wich function di I finish; But the experience wsa nice and 
+ I want to explore this way of programming more 
