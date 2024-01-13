@@ -1,0 +1,6 @@
+Project completed in 2 hours 49 minutes
+
+-practiced writing OOP completed
+-game logic
+-collision detection
+-input control
