@@ -1,0 +1,4 @@
+project completed in 1 hour 20 minutes
+
+-Practice with OOP,
+-shoppingCart logic;
