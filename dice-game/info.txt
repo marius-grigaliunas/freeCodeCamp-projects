@@ -1,0 +1,4 @@
+Project completed in 2 hours
+
+-algorithmic thinking
+-for of loop
