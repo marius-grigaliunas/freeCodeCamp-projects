@@ -1,0 +1,6 @@
+project completed in 2 hours
+
+-fetch requests
+-async
+-await 
+-api calling
