@@ -1,0 +1,5 @@
+completed dcc authors page project in 1 hour
+
+-fetch requests
+-then
+-catch error handling
