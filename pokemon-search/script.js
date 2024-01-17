@@ -12,3 +12,8 @@ const specialAttackStat = document.getElementById("special-attack");
 const specialDefenseStat = document.getElementById("special-defense");
 const speedStat = document.getElementById("speed");
 const imageContainer = document.getElementById("picture-container");
+
+const fetchData = async () => {
+
+    
+};
