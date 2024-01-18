@@ -13,7 +13,57 @@ const specialDefenseStat = document.getElementById("special-defense");
 const speedStat = document.getElementById("speed");
 const imageContainer = document.getElementById("picture-container");
 
-const fetchData = async () => {
-
-    
+const fetchPokemon = async () => {
+    try {
+        const pokeNameOrId = searchInput.value.toLowerCase().
+            replace(/[&\/\\#,+()$~%.'"!\[\]:;@^_=\-*?<>{}]/g, "").
+            replace(/\s/g, "-");
+        const response = await fetch(
+            `https://pokeapi-proxy.freecodecamp.rocks/api/pokemon/${pokeNameOrId}`
+        );
+        const data = await response.json();
+        buildOutput(data);
+    } catch (err) {
+        alert("Pokémon not found");
+        reset();
+    }
 };
+
+const buildOutput = data => {
+    pokemonName.innerHTML = data.name.toUpperCase();
+    pokemonID.innerHTML = `#${data.id}`;
+    weight.innerHTML = `Weight: ${data.weight}`;
+    height.innerHTML = `Height: ${data.height}`;
+
+    imageContainer.innerHTML = `<img id="sprite" src="${data.sprites.front_default}"></img>`;
+
+    data.types.forEach(item => {
+        typesContainer.innerHTML += 
+        `<div class="${item.type.name}">${item.type.name.toUpperCase()}</div>`;
+    });
+
+    hpStat.innerHTML = data.stats[0].base_stat;
+    attackStat.innerHTML = data.stats[1].base_stat;
+    defenseStat.innerHTML = data.stats[2].base_stat;
+    specialAttackStat.innerHTML = data.stats[3].base_stat;
+    specialDefenseStat.innerHTML = data.stats[4].base_stat;
+    speedStat.innerHTML = data.stats[5].base_stat;
+};
+
+const reset = () => {
+    searchInput.value = "";
+    pokemonName.innerHTML = "";
+    pokemonID.innerHTML = "";
+    weight.innerHTML = "";
+    height.innerHTML = "";
+    typesContainer.innerHTML = "";
+    hpStat.innerHTML = "";
+    attackStat.innerHTML = "";
+    defenseStat.innerHTML = "";
+    specialAttackStat.innerHTML = "";
+    specialDefenseStat.innerHTML = "";
+    speedStat.innerHTML = "";
+    imageContainer.innerHTML = "";
+};
+
+searchButton.addEventListener("click", fetchPokemon);
