@@ -27,7 +27,9 @@ const check = () => {
   }
 
   userInput.value = "";
-  resultsDiv.innerHTML += telephoneCheck(str) ? "Valid US number: " + str : "Invalid US number: " + str; 
+  resultsDiv.innerHTML += telephoneCheck(str) ?
+   `<div class="number correct">Valid US number: ${str}</div>` :
+   `<div class="number incorrect">Invalid US number: ${str}</div>`; 
 };
 
 const clear = () => {
