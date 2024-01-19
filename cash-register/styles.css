@@ -1,0 +1,31 @@
+*, *::before ,*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #000000;
+    --blue: #0b60b0;
+    --lighter-blue: #40a2d8;
+    --beige: #f0edcf;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+h1 {
+    color: var(--beige);
+    font-size: 3vw;
+}
+
+label {
+    color: var(--beige);
+}
+
+#change-due {
+    color: var(--beige);
+    border: 1px solid var(--lighter-blue);
+}
+h2 {
+    color: var(--beige);
+}
