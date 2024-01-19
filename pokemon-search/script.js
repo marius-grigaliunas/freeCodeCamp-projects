@@ -32,14 +32,15 @@ const fetchPokemon = async () => {
 const buildOutput = data => {
     pokemonName.innerHTML = data.name.toUpperCase();
     pokemonID.innerHTML = `#${data.id}`;
-    weight.innerHTML = `Weight: ${data.weight}`;
-    height.innerHTML = `Height: ${data.height}`;
+    weight.innerHTML = data.weight;
+    height.innerHTML = data.height;
 
     imageContainer.innerHTML = `<img id="sprite" src="${data.sprites.front_default}"></img>`;
 
+    typesContainer.innerHTML = "";
     data.types.forEach(item => {
         typesContainer.innerHTML += 
-        `<div class="${item.type.name}">${item.type.name.toUpperCase()}</div>`;
+        `<div class="type ${item.type.name}">${item.type.name.toUpperCase()}</div>`;
     });
 
     hpStat.innerHTML = data.stats[0].base_stat;
@@ -48,6 +49,7 @@ const buildOutput = data => {
     specialAttackStat.innerHTML = data.stats[3].base_stat;
     specialDefenseStat.innerHTML = data.stats[4].base_stat;
     speedStat.innerHTML = data.stats[5].base_stat;
+    console.log(data);
 };
 
 const reset = () => {
