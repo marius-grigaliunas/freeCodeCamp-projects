@@ -9,20 +9,43 @@
     <body>
         <h1>Cash register project</h1>
         <div class="register-container">
-            <div class="cash-container">
-                <label for="cash">Please enter the cash from the customer</label>
-                <input type="number" id="cash">
-                <button id="purchase-btn">Purchase</button>
+            <div class="drawer-container">
+                <h4>Money in the cash register</h2>
+                <label for="penny">Amount of pennies:</label>
+                <input type="number" id="penny" value="1.01" required> <br>
+                <label for="nickel">Amount of nickels:</label>
+                <input type="number" id="nickel" value="2.05" required> <br>
+                <label for="dime">Amount of dimes:</label>
+                <input type="number" id="dime" value="3.1" required> <br>
+                <label for="quarter">Amount of quarters:</label>
+                <input type="number" id="quarter" value="4.25" required> <br>
+                <label for="one">Amount of ones:</label>
+                <input type="number" id="one" value="90" required> <br>
+                <label for="five">Amount of fives:</label>
+                <input type="number" id="five" value="55" required> <br>
+                <label for="ten">Amount of tens:</label>
+                <input type="number" id="ten" value="20" required> <br>
+                <label for="twenty">Amount of twenties:</label>
+                <input type="number" id="twenty" value="60" required> <br>
+                <label for="hundred">Amount of hundreds</label>
+                <input type="number" id="hundred" value="100" required> <br>
             </div>
-            <div class="register">
-                <div class="total">Total: <span id="price"></span></div>
-                <div id="change-in-drawer">
-
-                </div>
+            <div class="price-container">
+                <h4>Price</h4>
+                <label for="price">Please enter the price of the products</label>
+                <input type="number" id="price" placeholder="3.26" value="3.26"><span>$</span>
+            </div>
+            <div class="cash-container">
+                <h4>Cash</h4>
+                <label for="cash">Please enter the cash from the customer</label>
+                <input type="number" id="cash" value="100"> <br>
+                <button id="process">Process user input</button>
+                <button id="purchase-btn">Purchase</button>
             </div>
         </div>
         <div class="output-container">
             <div id="change-due"></div>
+            <h1>Styling options are very limited due to the tests.</h1>
         </div>
         <script src="script.js"></script>
     </body>
